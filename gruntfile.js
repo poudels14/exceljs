@@ -51,6 +51,12 @@ module.exports = function(grunt) {
         dest: './dist/exceljs.bare.js',
       },
       bundle: {
+        options: {
+          external: [
+            'jszip',
+            "buffer",
+          ],
+        },
         // keep the original source for source maps
         src: ['./lib/exceljs.browser.js'],
         dest: './dist/exceljs.js',
