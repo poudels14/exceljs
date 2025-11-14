@@ -55,6 +55,7 @@ module.exports = function(grunt) {
           external: [
             'jszip',
             "buffer",
+            "saxes",
           ],
         },
         // keep the original source for source maps
